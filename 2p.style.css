@@ -1,0 +1,258 @@
+/* --- ここから二ページ目 --- */
+
+.container{ 
+    justify-content: space-between; 
+    display: flex;
+    max-width: 960px;      /* コンテンツの最大幅 */
+    margin: 0 auto;        /* 左右の余白を自動で均等に */
+    align-items: center; /* ← これを追加！ */
+
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
+  background-color:black;
+  padding: 5px 10px;
+  font-family: 'Segoe UI', sans-serif;
+    text-decoration: none; /
+}
+
+
+.nav2 {
+  display: flex;
+  gap: 20px; /* ナビの間隔調整 */
+  list-style: none;
+  margin-top: 10;
+  padding: 0;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* --- メインビジュアル中央揃え --- */
+.mainvisual {
+  display: flex;
+  justify-content: center;
+  width:100%;
+    height: 420px; 
+}
+
+.mainvisual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像を枠に合わせてトリミング */
+}
+
+
+/* --- Aboutセクション --- */
+.about h2{
+    text-align: center;
+}
+.about {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+.about p {
+  margin: 1em 0;
+}
+
+.about ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* --- WORKSセクション --- */
+
+body{overflow-x: hidden; }
+
+
+.tomioka {
+  margin:0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center; /* これで中の文字が中央寄せになります */
+  max-width: 1000px
+  padding:0 4%;
+}
+
+.tomioka h2 {
+  margin-bottom: 3px;  /* デフォルトが大きすぎるなら狭く */
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center; /* 横方向に中央寄せ */
+  gap: 2px;               /* 画像の間隔を少しあける */
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 40px; 
+}
+
+
+
+.image-grid li {
+  /* liの幅を指定して画像を大きくできる */
+  flex: 0 0 auto; /* liの幅を画像のサイズに合わせる */
+}
+
+
+
+.image-grid img {
+  width: 300px;      /* 画像の幅を大きく */
+  height: auto;      /* 高さは自動調整 */
+  object-fit: cover; /* 画像のトリミング方法 */
+  display: block;    /* 下の余白を消す */
+}
+
+.news{
+    max-width: 1000px;
+    margin:0 auto;
+    padding:20px 4%;
+    box-sizing: border-box;
+}
+
+.news h2{
+    text-align: center;   /* 見出しも中央寄せ */
+  margin-bottom: 20px;
+
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.news-item {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.news-item dt {
+  width: 120px;       /* 日付の幅を固定 */
+  font-weight: bold;
+  color: #555;
+  flex-shrink: 0;     /* 幅を縮めない */
+}
+
+.news-item dd {
+  margin: 0;
+  color: #333;
+}
+
+.contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 4%;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-list {
+  margin: 0;
+  padding: 0;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-item dt {
+  width: 120px;
+  font-weight: bold;
+  color: #333;
+  flex-shrink: 0;
+}
+
+.form-item dd {
+  margin: 0;
+  flex-grow: 1;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-area {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.splash-logo {
+  font-size: 32px;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.news-list a {
+  color: black;
+  text-decoration: none;  /* 下線を消したいとき */

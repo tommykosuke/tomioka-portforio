@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="2p.style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div id="splash">
+  <h1 class="splash-logo">myworks</h1>
+</div>
+
+<script>
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      const splash = document.getElementById("splash");
+      splash.style.opacity = 0;
+      splash.style.pointerEvents = "none";
+      // 完全に消す場合は以下も追加
+      setTimeout(() => splash.style.display = "none", 1000);
+    }, 2000); // 2秒後にフェードアウト
+  });
+</script>
+
+
+  <header class="container">
+    <div>
+      <a href="index.html" class="logo">My works</a>
+    </div>
+    <nav>
+      <ul class="nav2">
+        <li><a href="#about">about</a></li>
+        <li><a href="#works">wokrs</a></li>
+        <li><a href="#news">news</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mainvisual">
+      <img src="../images/mainvisual-pc.jpg">
+    </div>
+  </main>
+
+  <section class="about" id="about">
+    
+    <h2>About</h2>
+      <ul>
+        <li>My name is Tommy</li>
+        <li>Adress:Taito-word, Japan<br>Mail:k-tomioka@gmail.com</li>
+        <li>Tel:03-6806-0308</li>
+      </ul>
+      <p>ザ・ツーリストホテルは、葛西駅から徒歩5分のザ・ツーリストホテル葛西と秋葉原駅から徒歩6分のザ・ツーリストホテル＆カフェ秋葉原があります。
+      </p>
+  
+  </section>
+
+  <section class="tomioka" id="works">
+    <h2>WORKS</h2>
+    </div>
+      <ul class="image-grid">
+        <li><img src="/images/works1.jpg" alt="画像1"></li>
+        <li><img src="/images/works2.jpg" alt="画像2"></li>
+        <li><img src="/images/works3.jpg" alt="画像3"></li>
+        
+      </ul>
+      <ul class="image-grid">
+        <li><img src="/images/works4.jpg" alt="画像1"></li>
+        <li><img src="/images/works5.jpg" alt="画像2"></li>
+        <li><img src="/images/works6.jpg" alt="画像3"></li>
+        
+      </ul>
+  </section>
+
+  <section class="news" id="news">
+     <h2>NEWS</h2>
+     <dl class="news-list">
+      <div class="news-item">
+      <dt>2025.07.05</dt>
+      <dd><a href="pdf/firststep.pdf" target="_blank">新しいサイトを公開しました</a></dd>
+      </div>
+      <div class="news-item">
+        <dt>2025.06.25</dt>
+        <dd>コロナによる休業のお知らせ</dd>
+      </div>
+      <div class="news-item">
+        <dt>2025.06.02</dt>
+        <dd>那覇久茂地ホテル開業のお知らせ</dd>
+      </div>
+      <div class="news-item">
+        <dt>2025.05.02</dt>
+        <dd>お得な早割のご案内</dd>
+      </div>
+     </dl>
+
+  
+  <section class="contact" id="contact">
+  <h2>Contact</h2>
+  <form action="#" method="post">
+    <dl class="form-list">
+      <div class="form-item">
+        <dt><label for="name">name</label></dt>
+        <dd><input type="text" id="name" name="name"></dd>
+      </div>
+      <div class="form-item">
+        <dt><label for="email">mail</label></dt>
+        <dd><input type="email" id="email" name="email"></dd>
+      </div>
+      <div class="form-item">
+        <dt><label for="message">message</label></dt>
+        <dd><textarea id="message" name="message"></textarea></dd>
+      </div>
+    </dl>
+    <div class="submit-area">
+      <button type="submit">submit</button>
+    </div>
+  </form>
+</section>
+
+     
+  </section>
+</body>

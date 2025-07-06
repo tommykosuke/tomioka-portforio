@@ -1,0 +1,119 @@
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
+  background-color:black;
+  padding: 5px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container{ 
+    justify-content: space-between; 
+    display: flex;
+    max-width: 900px;      /* コンテンツの最大幅 */
+    margin: 0 auto;        /* 左右の余白を自動で均等に */
+    align-items: center; /* ← これを追加！ */
+    
+   }
+.container a
+{text-decoration: none; }
+
+.nav {
+  display: flex;
+  gap: 40px; /* ナビの間隔調整 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a{
+    color: black;              /* 文字色を黒に */
+    text-decoration: none;     /* 下線をなくす */
+}
+li{ 
+    list-style: none;
+    margin-right: 40px;
+}
+
+.image-box {
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+  margin: 40px auto 0;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.about{
+   margin: 100px;
+}
+
+.about h2{
+  text-align: center; /* About文字を中央に */
+  margin-bottom: 20px; /* Aboutと画像の間の余白 */
+  text-decoration: underline;
+  align-items: center;
+  justify-content: center; /* 横方向の中央揃え */
+}
+
+.introduction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.introduction img{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text{
+  max-width: 400px;
+}
+
+
+.subintro h2{
+  text-align: center; /* About文字を中央に */
+  margin-bottom: 20px; /* Aboutと画像の間の余白 */
+  text-decoration: underline;
+  align-items: center;
+  justify-content: center; /* 横方向の中央揃え */
+}
+
+.imagerow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.imageitem{
+  
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.imageitem img{
+  width: 200px; /* 画像サイズを小さく調整 */
+  height: auto;
+}
+
+.caption{
+     text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555;
+}
+
+footer{
+  text-align: center;
+  font-size: 8px;
+
+}
